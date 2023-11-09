@@ -10,30 +10,25 @@
   <div class="center-box">
     <div class="stopwatch-box">
       <div>
-        <span>00</span>
-        <span>:</span>
-        <span>00</span>
-        <span>:</span>
-        <span>00</span>
+        <div id="displayTime">00:00:00</div>
       </div>
   
-      <div>
-        <button class="stop-button">
-          <img src="images/stop.png" class="button-image" alt="stop">
-        </button>
-        
-        <button class="start-button">
-          <img src="images/start.png" class="button-image" alt="start">
+      <div class="box-button">
+        <button class="js-stop-button" onclick="watchStop();">
+          <img src="images/stop.png" class="button-image" alt="start">
         </button>
 
-        <button class="reset-button">
+        <button class="js-start-button" onclick="watchStart();">
+          <img src="images/start.png" class="button-image button-start" alt="start">
+        </button>
+
+        <button class="js-reset-button" onclick="watchReset();">
           <img src="images/reset.png" class="button-image" alt="reset">
         </button>
       </div>
     </div>
   </div>
   
-
   <script src="scripts/stopwatch.js"></script>
 </body>
 </html>
